@@ -16,13 +16,16 @@ I started by designing a router around what we needed:
 - GRBL on an Arduino Uno with a CNC Shield V3
 - MeanWell LRS-350-24 supply
 
-Frame geometry is done in Onshape. BOM landed around $742 at Rev 4a. I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
+Frame geometry is done in Onshape. BOM landed around $742 at [Rev 4a](design/bom-rev-4a.csv). I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
 
 ![CAD](images/cad-01.png)
 ![CAD](images/cad-02.png)
 ![CAD](images/cad-03.png)
 
-Live model: [Onshape link]
+Working drawings:
+
+![Drawing](design/drawing-01.jpg)
+![Drawing](design/drawing-02.jpg)
 
 ## Then the scope grew
 
@@ -50,8 +53,6 @@ I went with buying it. The design work is still here. Doing that work is what to
 images/     CAD screenshots, machine photos
 design/     drawing sheets, the Python that generates them, and the BOM
 ```
-
-The CAD lives in Onshape rather than as exports in this repo. Link above.
 
 ## Open questions
 
