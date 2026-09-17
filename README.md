@@ -18,14 +18,11 @@ I started by designing a router around what we needed:
 
 Frame geometry is done in Onshape. BOM landed around $742 at [Rev 4a](design/bom-rev-4a.csv). I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
 
-![CAD](images/cad-01.png)
-![CAD](images/cad-02.png)
-![CAD](images/cad-03.png)
+<img src="images/cad-01.png" width="260"> <img src="images/cad-02.png" width="260"> <img src="images/cad-03.png" width="260">
 
 Working drawings:
 
-![Drawing](design/drawing-01.jpeg)
-![Drawing](design/drawing-02.jpeg)
+<img src="design/drawing-01.jpg" width="380"> <img src="design/drawing-02.jpg" width="380">
 
 ## Then the scope grew
 
