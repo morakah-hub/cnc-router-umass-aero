@@ -24,8 +24,8 @@ Frame geometry is done in Onshape. BOM landed around $742 at [Rev 4a](design/bom
 
 Working drawings:
 
-![Drawing](design/drawing-01.jpg)
-![Drawing](design/drawing-02.jpg)
+![Drawing](design/drawing-01.jpeg)
+![Drawing](design/drawing-02.jpeg)
 
 ## Then the scope grew
 
