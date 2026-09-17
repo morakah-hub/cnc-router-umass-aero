@@ -18,8 +18,9 @@ I started by designing a router around what we needed:
 
 Frame geometry is done in Onshape. BOM landed around $742 at Rev 4a. I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
 
-<!-- CAD images -->
 ![CAD](images/cad-01.png)
+
+Live model: [Onshape link]
 
 ## Then the scope grew
 
@@ -33,7 +34,7 @@ Around the same time a used FoxAlien Masuter Pro came up locally for about $400,
 
 My design was better matched to what we needed. It was also going to cost more and take weeks the team didn't have before they needed parts. The Masuter Pro gets us cutting now and can be modified for the height we need.
 
-I went with buying it. The from-scratch files are still in this repo. Doing that work is what told me what to look for in a machine, and the modifications will come straight out of it.
+I went with buying it. The design work is still here. Doing that work is what told me what to look for in a machine, and the modifications will come straight out of it.
 
 ## Where it is now
 
@@ -44,11 +45,12 @@ I went with buying it. The from-scratch files are still in this repo. Doing that
 ## In this repo
 
 ```
-cad/        Onshape exports of the from-scratch design
+images/     CAD screenshots, machine photos
 drawings/   parametric drawing sheets + the Python that generates them
 bom/        Rev 4a bill of materials
-images/     CAD renders, machine photos
 ```
+
+The CAD lives in Onshape rather than as exports in this repo. Link above.
 
 ## Open questions
 
