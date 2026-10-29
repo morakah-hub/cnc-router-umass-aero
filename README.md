@@ -18,7 +18,7 @@ I started by designing a router around what we needed:
 - GRBL on an Arduino Uno with a CNC Shield V3
 - MeanWell LRS-350-24 supply
 
-Frame geometry is done in Onshape. BOM landed around $742 at [Rev 4a](design/bom-rev-4a.csv). I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
+Frame geometry is done in Onshape. BOM landed around $742 at [Rev 4a](design/bom-rev-4a.xlsx). I wrote a Python script to generate the drawing sheets parametrically so dimensions stayed in sync with the model instead of drifting every time I changed something.
 
 <img src="images/cad-01.png" width="260"> <img src="images/cad-02.png" width="260"> <img src="images/cad-03.png" width="260">
 
@@ -52,46 +52,73 @@ Bought, brought back, and cutting.
 
 ## Modification 1: raising the gantry
 
-Out of the box, the Masuter Pro doesn't have the clearance for our fuselage halves. Instead of building a riser under the whole machine, I designed new plates that lift the Y beams, and everything mounted on them, by TBD mm.
-
-**Process:**
-
-1. **CAD** — new plates designed in Onshape around the Masuter Pro's existing mounting holes.
-2. **Test fit in PLA** — printed the plates first to check hole positions and fit before cutting metal.
-3. **Plasma cut** — cut from 1/4" aluminum in the makerspace.
-4. **Drill press** — holes drilled to final size.
+Out of the box, the Masuter Pro doesn't have the clearance for our fuselage halves. Instead of building a riser under the whole machine, I designed new corner brackets that lift the Y beams, and everything mounted on them.
 
 <p align="center">
-  <img src="images/cnc_plate_upgrade.jpeg" alt="New gantry riser plate design" width="500"/>
+  <img src="images/cnc_plate_upgrade.jpeg" alt="Stock orange corner bracket held against the taller replacement bracket" width="300"/>
 </p>
+
+### Design and test fit
+
+1. **CAD**: new brackets designed in Onshape around the Masuter Pro's existing mounting holes.
+2. **Test fit in PLA**: printed the brackets first to check hole positions and fit before cutting metal.
 
 <p align="center">
-  <img src="images/testplatesoutofpla.jpeg" alt="PLA test plates for fit check" width="400"/>
-  <img src="images/plasmajetworking.jpeg" alt="Plasma cutter cutting the aluminum plates" width="400"/>
+  <img src="images/testplatesoutofpla.jpeg" alt="PLA test brackets for fit check" width="320"/>
 </p>
+
+### First attempt: plasma cutter
+
+3. **Plasma cut** from 1/4" aluminum in the makerspace, then drilled on the drill press.
+
+The cuts came out rough, and the brackets weren't clean enough to put on the machine.
 
 <p align="center">
-  <img src="images/CNC_plates_after_plasma_jet.jpeg" alt="Aluminum plates after plasma cutting" width="500"/>
+  <img src="images/plasmajetworking.jpeg" alt="Plasma cutter cutting the aluminum brackets" width="320"/>
 </p>
 
-📹 [Drilling the plates](images/pressdrill.mp4)
+📹 [Drilling the plasma-cut brackets](images/pressdrill.mp4)
+
+### Second attempt: manual mill
+
+4. **Remade on a manual mill**: cut the same brackets again from aluminum. They came out much cleaner.
+5. **Installed** on the machine.
+
+<table>
+  <tr>
+    <th align="center">Plasma cut (first attempt)</th>
+    <th align="center">Milled (installed)</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/CNC_plates_after_plasma_jet.jpeg" alt="Rough plasma-cut aluminum brackets" width="360"/></td>
+    <td align="center"><img src="images/New%20milled%20brackets.jpg" alt="Milled aluminum corner bracket installed on the Masuter Pro" width="360"/></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="images/Router%20with%20brackets%20(more%20upgrades%20coming).jpg" alt="Masuter Pro with the new milled corner brackets installed" width="600"/>
+  <br>
+  <sub>The Masuter Pro with the new brackets installed. More upgrades coming.</sub>
+</p>
 
 ## Where it is now
 
 - [x] Designed a router from scratch (BOM, CAD, drawings)
 - [x] Bought a used Masuter Pro instead, and documented why
 - [x] First cuts
-- [x] Riser plates designed, test-fit in PLA, plasma cut, and drilled
-- [ ] Plates installed and machine re-squared
+- [x] Riser brackets designed and test-fit in PLA
+- [x] Plasma-cut the brackets, then remade them on a manual mill
+- [x] Milled brackets installed
+- [ ] Machine re-squared after the bracket install
 - [ ] First CF cuts
-- [ ] Dust shoe (3D printed), to work with the team's existing vacuum
-- [ ] Spindle: switch to a cheaper 65 mm spindle instead of the Makita
+- [ ] Dust shoe (3D printed), plus a shop vacuum with a filter to connect to it
+- [ ] Spindle: switch to a cheaper 65 mm spindle (FoxAlien FA710) instead of the Makita
 
 ## In this repo
 
 ```
 images/     CAD screenshots, machine photos, modification photos
-design/     drawing sheets, the Python that generates them, and the BOM
+design/     drawing sheets and the BOM
 ```
 
 ## Open questions
